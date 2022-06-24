@@ -3,7 +3,7 @@ name: Production workflow
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -22,5 +22,5 @@ jobs:
         with:
           args: deploy --dir=build --prod
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: 'github-actions-heroku-prod'
-          heroku_email: 'zafarsaleem3@gmail.com'
+          heroku_app_name: 'cicd-prodapp'
+          heroku_email: 'asaoluelijah7@gmail.com'
